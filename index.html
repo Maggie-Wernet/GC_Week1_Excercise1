@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GC HW 1</title>
+    <style>
+      body {
+        background-color: #ff7979;
+        font-family: "Roboto", sans-serif;
+      }
+      p {
+        height: fit-content;
+        color: grey;
+        text-align: center;
+      }
+      button {
+        display: block;
+        margin-left: 50%;
+        margin-right: 50%;
+        transform: translate(-50%, -50%);
+        border: #a2ece6;
+        outline: none;
+        background: #a2ece6;
+        color: white;
+        font-size: 1rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        padding: 10px 20px;
+        cursor: pointer;
+      }
+
+      form {
+        color: lightgrey;
+        font-size: small;
+      }
+      input[type="text"],
+      input[type="password"] {
+        width: 100%;
+        margin: 10px 0px;
+        padding: 12px 20px;
+        display: inline-block;
+        border: 1px solid #d9dddc;
+        box-sizing: border-box;
+      }
+      button:hover {
+        opacity: 0.7;
+      }
+
+      .container {
+        background-color: #f2f3f5;
+        width: 500px;
+        height: 300px;
+        padding: 20px;
+        box-shadow: 0px 5px 10px 2px rgba(110, 110, 110, 0.226);
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <div class="container">
+        <p>Have an account? Sign in</p>
+        <input type="text" placeholder="Username" name="username" required />
+        <input
+          type="password"
+          placeholder="Password"
+          name="password"
+          required
+        />
+        <button type="submit">Login</button>
+        <input type="checkbox" checked="false" />Remember me
+      </div>
+    </form>
+  </body>
+</html>
