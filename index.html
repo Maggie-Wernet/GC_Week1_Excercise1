@@ -16,6 +16,9 @@
         color: grey;
         text-align: center;
       }
+      fieldset {
+        border: none;
+      }
       button {
         display: block;
         margin-left: 50%;
@@ -39,14 +42,11 @@
       input[type="text"],
       input[type="password"] {
         width: 100%;
-        margin: 10px 0px;
+        margin: 10px 10px;
         padding: 12px 20px;
         display: inline-block;
         border: 1px solid #d9dddc;
         box-sizing: border-box;
-      }
-      button:hover {
-        opacity: 0.7;
       }
 
       .container {
@@ -66,13 +66,17 @@
     <form>
       <div class="container">
         <p>Have an account? Sign in</p>
-        <input type="text" placeholder="Username" name="username" required />
-        <input
-          type="password"
-          placeholder="Password"
-          name="password"
-          required
-        />
+        <fieldset>
+          <input type="text" placeholder="Username" name="username" required />
+        </fieldset>
+        <fieldset>
+          <input
+            type="password"
+            placeholder="Password"
+            name="password"
+            required
+          />
+        </fieldset>
         <button type="submit">Login</button>
         <input type="checkbox" checked="false" />Remember me
       </div>
