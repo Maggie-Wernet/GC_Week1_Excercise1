@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
 * {
   margin: 0;
+  color: rgba(255, 255, 255, 0.8);
 }
 header {
   font-family: "Lato", sans-serif;
@@ -20,11 +21,9 @@ ul {
   list-style-type: none;
 }
 li {
-  margin-right: 10px;
+  margin-left: 20px;
 }
-a {
-  color: rgba(255, 255, 255, 0.8);
-}
+
 a:link {
   text-decoration: none;
 }
@@ -32,8 +31,23 @@ a:visited {
   text-decoration: none;
 }
 a:hover {
-  text-decoration: none;
+  text-decoration: red;
 }
 a:active {
   text-decoration: none;
+}
+
+@media only screen and (min-width: 768px) {
+  header {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+  ul {
+    display: flex;
+    flex-direction: row;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
 }

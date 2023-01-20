@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  border: 1px solid black;
+  height: 100vh;
+}
+.main-container {
+  border: 1px solid green;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.box {
+  border: 1px solid black;
+  width: 50%;
+  height: 33.33%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#box-one {
+  background-color: red;
+}
+#box-two {
+  background-color: orange;
+}
+#box-three {
+  background-color: yellow;
+}
+#box-four {
+  background-color: green;
+}
+#box-five {
+  background-color: blue;
+}
+#box-six {
+  background-color: indigo;
+}
+
+@media screen and (min-width: 600px) {
+  .box {
+    width: 33.33%;
+    height: 50%;
+  }
+}
